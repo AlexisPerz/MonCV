@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+header {
+	margin-bottom: 5%;
+}
+.container{
+	display: flex;
+}
+#left{
+	width: 30%;
+	background-color: #FFC107;
+	color: #37474F;
+	position: relative;
+}
+.avatar{
+	padding: 20px;
+	text-align: center
+}
+.photo{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.title-left{
+	background-color: #37474F;
+	padding: 10px;
+	text-align: center;
+	color: #FFC107;
+}
+.loisirs{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#right{
+	width: 70%;
+	color: #37474F;
+	padding: 100px 5% 0 5%;
+}
+.prenom{
+	color: #FFC107;
+}
+.identite{
+	color: black;
+}
+.title-right {
+	color: black;
+}
+#left div .content-left{
+	margin: 0 20px 0 20px;
+	text-align: justify;
+}
+.surline{
+	border-bottom: #FFC107 2px solid;
+}
+.main-left{
+	width: 30%;
+}
+.main-right{
+	width: 70%;
+}
+.fa-graduation-cap{
+	color: #FFC107;
+}
+.fa-dot-circle-o{
+	color: #FFC107;
+}
+.fa-circle{
+	color: #FFC107;
+}
+.fa-briefcase{
+	color: #FFC107;
+}
+.fa-pencil-square-o{
+	color: #FFC107;
+}
