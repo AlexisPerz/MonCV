@@ -9,7 +9,7 @@ header /* Marge en bas du header de 5% */
 	margin-bottom: 5%;
 }
 
-.container /* Tous les container sont dans une flexbox */
+.container /* Tous les container sont dans une flexbox et les éléments passe à la ligne quant ils n'ont plus de place */
 {
 	display: flex;
 }
@@ -97,6 +97,7 @@ header /* Marge en bas du header de 5% */
 .surline /* Couleur des traits de séparations jaune et dimension de 2px */
 {
 	border-bottom: #FFC107 2px solid;
+	margin-top: -10px;
 }
 
 .main-left /* Dimension des blocs main-left de 30% */
@@ -107,6 +108,9 @@ header /* Marge en bas du header de 5% */
 .main-right /* Dimension des blocs main-right de 70% */
 {
 	width: 70%;
+}
+.main-middle{
+	width: 50%;
 }
 
 #right i /* Tout les i du bloc right sont de couleur grise */
@@ -124,14 +128,58 @@ header /* Marge en bas du header de 5% */
 	padding-right: 15px;
 }
 
-.paragraphe
+.paragraphe /* Positionnement des noms des villes sous les années */
 {
 	margin-left: 33px;
 	margin-top: -12px;
 }
 
-header .surline
+header .surline /* Positionnement du trait de séparation sous le titre et taille de 6% */
 {
 	margin-top: -20px;
 	width: 6%;
+}
+
+@media screen and (max-width: 768px) /* Règles CSS pour l'affichage sur tablette */
+{
+	#left
+	{
+		width: 50%;
+	}
+
+	#right
+	{
+		width: 50%;
+	}
+
+	section .container
+	{
+		display: inherit;
+	}
+
+	.main-left, .main-right, .main-middle
+	{
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 480px) /* Règles CSS pour l'affichage sur mobile */
+{
+	.container
+	{
+		display: inherit;
+	}
+
+	#left, #right
+	{
+		width: 100%;
+	}
+
+	.loisirs
+	{
+	position: inherit;
+	bottom: 0;
+	width: 100%;
+	}
 }
