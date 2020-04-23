@@ -133,4 +133,5 @@ header /* Marge en bas du header de 5% */
 header .surline
 {
 	margin-top: -20px;
+	width: 6%;
 }
