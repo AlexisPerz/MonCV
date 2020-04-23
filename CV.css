@@ -1,78 +1,136 @@
-body{
+body /* La marge de la page est 0 et police de caractère est en arial */
+{
 	margin: 0;
 	font-family: sans-serif;
 }
-header {
+
+header /* Marge en bas du header de 5% */
+{
 	margin-bottom: 5%;
 }
-.container{
+
+.container /* Tous les container sont dans une flexbox */
+{
 	display: flex;
 }
-#left{
+
+#left /* Dimensions du côté gauche de 30% de la page, couleur de fond jaune, couleur du texte gris */
+{
 	width: 30%;
 	background-color: #FFC107;
 	color: #37474F;
 	position: relative;
 }
-.avatar{
+
+.avatar /* Position de la photo de profil à 20px et au centre du côté gauche */
+{
 	padding: 20px;
 	text-align: center
 }
-.photo{
+
+.photo /* Dimensions de la photo de profil à 200px de large et 200px de haut et une bordure de 50% pour la rendre ronde */
+{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 }
-.title-left{
+
+.title-left /* La couleur de fond des titres de gauche est grise et la couleur des titres est jaune et ils sont positionnés au centre */
+{
 	background-color: #37474F;
 	padding: 10px;
 	text-align: center;
 	color: #FFC107;
 }
-.loisirs{
+
+.loisirs /* Position du bloc loisirs */
+{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
 }
-#right{
+
+.loisirs .fa /* Tous les icones dans le bloc loisirs ont un cercle et une couleur grise avec un espacement de 5% */
+{
+	border: 2px solid #37474F;
+	border-radius: 50%;
+	width: 40px;
+	height:40px;
+	padding: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#right /* Dimensions du côté droit de 70% de la page, couleur du texte gris */
+{
 	width: 70%;
 	color: #37474F;
 	padding: 100px 5% 0 5%;
 }
-.prenom{
+
+.prenom /* Couleur jaune du prenom et taille de 50px */
+{
 	color: #FFC107;
+	font-size: 50px;
 }
-.identite{
+
+.identite /* Couleur noire du nom et taille de 50px */
+{
+	color: black;
+	font-size: 50px;
+	margin-top: -20px;
+}
+
+.title-right /* Couleur des titres de droite en noir */
+{
 	color: black;
 }
-.title-right {
-	color: black;
-}
-#left div .content-left{
+
+#left div .content-left /* Toutes les div du bloc left et content-left ont une marge de 0 20px 0 20px */
+{
 	margin: 0 20px 0 20px;
 	text-align: justify;
 }
-.surline{
+
+.surline /* Couleur des traits de séparations jaune et dimension de 2px */
+{
 	border-bottom: #FFC107 2px solid;
 }
-.main-left{
+
+.main-left /* Dimension des blocs main-left de 30% */
+{
 	width: 30%;
 }
-.main-right{
+
+.main-right /* Dimension des blocs main-right de 70% */
+{
 	width: 70%;
 }
-.fa-graduation-cap{
+
+#right i /* Tout les i du bloc right sont de couleur grise */
+{
 	color: #FFC107;
 }
-.fa-dot-circle-o{
-	color: #FFC107;
+
+.metier /* Marge haute du bloc métier à -35px */
+{
+	margin-top: -35px;
 }
-.fa-circle{
-	color: #FFC107;
+
+.main-left i /* Espacement des icones points de 10px à droite */
+{
+	padding-right: 15px;
 }
-.fa-briefcase{
-	color: #FFC107;
+
+.paragraphe
+{
+	margin-left: 33px;
+	margin-top: -12px;
 }
-.fa-pencil-square-o{
-	color: #FFC107;
+
+header .surline
+{
+	margin-top: -20px;
 }
