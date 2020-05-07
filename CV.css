@@ -28,11 +28,19 @@ header /* Marge en bas du header de 5% */
 	text-align: center
 }
 
-.photo /* Dimensions de la photo de profil à 200px de large et 200px de haut et une bordure de 50% pour la rendre ronde */
+.photo1 /* Dimensions de la photo 1 de profil à 200px de large et 200px de haut et une bordure de 50% pour la rendre ronde */
 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+}
+
+.photo2 /* Dimensions de la photo 2 de profil à 200px de large et 200px de haut et une bordure de 50% pour la rendre ronde */
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: none;
 }
 
 .title-left /* La couleur de fond des titres de gauche est grise et la couleur des titres est jaune et ils sont positionnés au centre */
@@ -170,13 +178,15 @@ header .surline /* Positionnement du trait de séparation sous le titre et taill
 {
 	.container
 	{
-		display: inherit;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	#left, #right
 	{
 		width: 100%;
 		text-align: center;
+
 	}
 
 	.loisirs
@@ -220,5 +230,22 @@ header .surline /* Positionnement du trait de séparation sous le titre et taill
 	{
 		margin-left: 0;
 		margin-top: -12px;
+	}
+
+	.photo1
+	{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		display: none;
+	}
+
+	.photo2
+	{
+		display: inherit;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		border: 2px solid #37474F;
 	}
 }
