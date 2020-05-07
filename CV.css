@@ -25,7 +25,8 @@ header /* Marge en bas du header de 5% */
 .avatar /* Position de la photo de profil à 20px et au centre du côté gauche */
 {
 	padding: 20px;
-	text-align: center
+	margin-bottom: 25px;
+	text-align: center;
 }
 
 .photo1 /* Dimensions de la photo 1 de profil à 200px de large et 200px de haut et une bordure de 50% pour la rendre ronde */
@@ -75,7 +76,7 @@ header /* Marge en bas du header de 5% */
 {
 	width: 70%;
 	color: #37474F;
-	padding: 100px 5% 0 5%;
+	padding: 50px 5% 0 5%;
 }
 
 .prenom /* Couleur jaune du prenom et taille de 50px */
